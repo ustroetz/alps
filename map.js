@@ -1,5 +1,5 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWxscnlkZXIiLCJhIjoidWs5cUFfRSJ9.t8kxvO3nIhCaAl07-4lkNw';
-var map = L.mapbox.map('map', 'mapbox.streets', {
+var map = L.mapbox.map('map', 'allryder.neba5b9p', {
     zoomControl: true
 }).setView([40, -74.50], 9);
 
