@@ -1,8 +1,5 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWxscnlkZXIiLCJhIjoidWs5cUFfRSJ9.t8kxvO3nIhCaAl07-4lkNw';
-var map = L.mapbox.map('map', 'allryder.neba5b9p', {
-    zoomControl: true
-}).setView([40, -74.50], 9);
-
+var map = L.mapbox.map('map').setView([40, -74.50], 9);
 var stopsLayer = L.geoJson(stops, {
     style: function(feature) {
         return feature.properties;
@@ -34,9 +31,14 @@ stopsLayer.eachLayer(function(layer) {
 });
 
 if (directions.queryable()) {
-    console.log(directions);
     directions.query();
 }
 
 stopsLayer.addTo(map);
 map.fitBounds(stopsLayer.getBounds());
+
+
+L.control.layers({
+    'Outdoords': L.mapbox.tileLayer('allryder.neba5b9p').addTo(map),
+    'Satellite': L.mapbox.tileLayer('allryder.nebb4k35')
+}).addTo(map);
