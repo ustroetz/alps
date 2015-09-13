@@ -248,7 +248,7 @@ var stops = {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "bicycle",
-        "title": "Maurerberghütte",
+        "title": "Burgstallalm",
         "type": "viapoint",
         "description": ""
       },
