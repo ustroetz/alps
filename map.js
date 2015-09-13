@@ -4,15 +4,19 @@ var map = L.mapbox.map('map').setView([40, -74.50], 9);
 
 var stopsLayer = L.mapbox.featureLayer(stops, {
     style: function(feature) {
-    	console.log(feature.properties);
+        console.log(feature.properties);
         return feature.properties;
     }
 })
 
 var directions = L.mapbox.directions();
 directions.setProfile('mapbox.cycling');
-var directionsLayer = L.mapbox.directions.layer(directions, {routeStyle: {color: "#5F021F"}})
-  .addTo(map);
+var directionsLayer = L.mapbox.directions.layer(directions, {
+        routeStyle: {
+            color: "#5F021F"
+        }
+    })
+    .addTo(map);
 var directionsRoutesControl = L.mapbox.directions.routesControl('routes', directions);
 
 var index = -1
@@ -33,6 +37,12 @@ if (directions.queryable()) {
     directions.query();
 }
 
+directions.on('load', function(e) {
+    distance = e.routes[0].distance;
+    duration = e.routes[0].duration;
+    var routeDetails = 'Estimated Route: ' + Math.round(distance / 1000) + ' km, ' + Math.round(duration / 60) + ' min'
+    console.log(routeDetails)
+})
 
 stopsLayer.addTo(map);
 map.fitBounds(stopsLayer.getBounds());
