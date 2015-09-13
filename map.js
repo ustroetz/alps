@@ -38,7 +38,5 @@ if (directions.queryable()) {
     directions.query();
 }
 
-
-
 stopsLayer.addTo(map);
 map.fitBounds(stopsLayer.getBounds());
