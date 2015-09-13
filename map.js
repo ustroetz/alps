@@ -14,6 +14,7 @@ var stopsLayer = L.geoJson(stops, {
 })
 
 var directions = L.mapbox.directions();
+directions.setProfile('mapbox.cycling');
 var directionsLayer = L.mapbox.directions.layer(directions)
     .addTo(map);
 var directionsRoutesControl = L.mapbox.directions.routesControl('routes', directions);
