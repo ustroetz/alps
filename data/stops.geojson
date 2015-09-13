@@ -32,8 +32,8 @@ var stops = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.810555,
-          47.099298
+          11.666379,
+          47.298618
         ]
       }
     },
@@ -50,8 +50,7 @@ var stops = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.662569,
-          46.756756
+          11.808294,47.098931
         ]
       }
     },
