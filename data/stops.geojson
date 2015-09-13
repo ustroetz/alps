@@ -349,15 +349,66 @@ var stops = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "warehouse",
-        "type": "destination",
+        "marker-symbol": "bicycle",
+        "type": "waypoint",
         "description": "",
-        "title": "Ziel"
+        "title": "Gasserhütte (Villanderer Alm)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-           11.357499,46.497883
+           11.48995,46.64158
+        ]
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "type": "waypoint",
+        "description": "",
+        "title": "Rittner Horn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           11.46135,46.61485
+        ]
+      }
+    },
+            {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "type": "waypoint",
+        "description": "",
+        "title": "Oberbozen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           11.4067,46.5282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "warehouse",
+        "type": "destination",
+        "description": "",
+        "title": "Bozen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           11.35472,46.49820
         ]
       }
     }

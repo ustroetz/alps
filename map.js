@@ -11,8 +11,8 @@ var stopsLayer = L.mapbox.featureLayer(stops, {
 
 var directions = L.mapbox.directions();
 directions.setProfile('mapbox.cycling');
-var directionsLayer = L.mapbox.directions.layer(directions)
-    .addTo(map);
+var directionsLayer = L.mapbox.directions.layer(directions, {routeStyle: {color: "#5F021F"}})
+  .addTo(map);
 var directionsRoutesControl = L.mapbox.directions.routesControl('routes', directions);
 
 var index = -1
@@ -33,7 +33,6 @@ if (directions.queryable()) {
     directions.query();
 }
 
-console.log(directionsLayer);
 
 stopsLayer.addTo(map);
 map.fitBounds(stopsLayer.getBounds());
