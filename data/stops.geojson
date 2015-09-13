@@ -6,8 +6,8 @@ var stops = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "bus",
-        "name": "1.Etappe: Bahnhof Tegernsee",
+        "marker-symbol": "warehouse",
+        "title": "1.Etappe: Bahnhof Tegernsee",
         "type": "origin",
         "description": "Tegernsee, Kreuth und der traumhafte Talboden \"In der langen Au\" heißen die ersten Stationen unserer Transalp, die hier noch bekannten Wegen folgt. Einsam ist es nur bei schlechtem Wetter, ansonsten trifft man hier zig Biker: Zu beliebt sind die Bayerischen Alpen im Allgemeinen und die Strecke Richtung Erzherzog-Johann-Klause im Speziellen. Und auch die Fortsetzung entlang der Brandenberger Ache hinaus ins Inntal gehört zu den Lieblingsstrecken der Mountainbiker. Das liegt daran, dass die Straße hier breit und das Gefälle moderat ist - und damit ideal für Einsteiger. Dafür schaffen wir gleich am ersten Tag 70 Kilometer. Vorbei an Kramsach erreichen wir das Inntal und fahren auf dem flachen Radweg weiter nach Schwaz. Dort wartet doch noch ein erster Konditionstest beim Anstieg hinauf nach Weerberg, dem ersten Etappenziel."
       },
@@ -24,9 +24,60 @@ var stops = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "bicycle",
+        "title": "Kreuth",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.743244,47.644156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "In der Langen Au",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.783265,47.616553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "Erzherzog-Johann-Klause",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.887150,47.581640
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "warehouse",
         "type": "waypoint",
-        "name": "2. Etappe: Weerberg - Ginzling im Zillertal",
+        "title": "2. Etappe: Weerberg - Ginzling im Zillertal",
         "description": "Am zweiten Tag geht es zur Sache. So zahlreich die Möglichkeiten einer Transalp auch sind, an einigen Pässen kommt man nicht vorbei. Etwa am Geiseljoch in den Tuxer Alpen. Hier muss jeder drüber, der nicht durch das stark befahrene Zillertal oder das Wipptal mit der Brennerautobahn fahren will. Oder der eine Transalp viel weiter östlich beziehungsweise westlich ausgesucht hat. Abgesehen vom großen Andrang ist die Tour wirklich schön und mit der Weidener Hütte wartet bei der langen Auffahrt über gut 1400 Höhenmeter eine Einkehr. Schiebestellen halten sich selbst beim finalen Schlussanstieg im Rahmen, dann hat man es geschafft und genießt vom 2292 Meter hohen Geiseljoch den Blick zum Olperer, dem Hauptgipfel des Tuxer Kammes. Wer sich je gefragt hat, wie sich eine Transalp anfühlt, findet spätestens hier die Antwort: anstrengend, aber schön. Mit dem Geiseljoch lässt man das Inntal und die Bayerische Alpen hinter sich und nähert sich zielstrebig dem Alpenhauptkamm. Die Belohnung für den ersten richtigen Kraftakt der Tour: eine Traumabfahrt ins Tuxer Tal. Damit der nächste Tag nicht zu lang wird, halten die Radfahrer noch durch bis Ginzling: ein kleines Bergsteigerdorf an der Auffahrt zum Schlegeisspeicher und eine wohltuend ruhige Oase im Vergleich zum quirligen Mayrhofen."
       },
       "geometry": {
@@ -42,10 +93,45 @@ var stops = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "bicycle",
+        "title": "Weidener Hütte",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.708742,47.223559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "Geiseljoch",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.716039180755615,
+          47.19942686971203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "warehouse",
         "type": "waypoint",
         "description": "Die Strecke am dritten Tag ist fast noch etwas länger als am ersten, dafür fahren wir mitten durch die Zillertaler Dreitausender mit Blick auf die vergletscherten Gipfel. Das Pfitscher Joch ist ein dankbarer Übergang über den Alpenhauptkamm und perfekt für Mountainbiker. Wo sonst - mit Ausnahme der verkehrsreichen Alpenpässe wie Brenner, Timmelsjoch oder Reschen - lässt sich so leicht und ohne mehrstündige Tragestrecken nach Südtirol wechseln? Bis zum Schlegeisspeicher folgen wir weitgehend der Straße, dann wechseln wir auf einen wunderbaren, aufwändig mit Steinplatten gepflasterten Weg. Hier und da kann man noch fahren, doch dann ist es besser und kraftsparender, aufzugeben und zu schieben. Ab der Lavitzalm dürfen wir wieder aufsitzen und nach einer letzten steilen Rampe passieren wir das Pfitscher Joch und wechseln auf die Südseite der Alpen. Passend dazu gibt es im Pfitscher-Joch-Haus (2277 m) erst einmal eine Riesenportion Spaghetti. Die Abfahrt vom Pfitscher Joch mit Blick auf die Hochfernerspitze ist großartig. Und hört einfach nicht auf. Kilometerweit rollen wir bergab ins Pfitscher Tal und erst ganz weit unten müssen wir wieder etwas treten. Aber nur kurz, dann geht es wieder abwärts nach Sterzing. Der Radweg durch das Eisacktal Richtung Brixen führt stetig leicht bergab. Hier kann man richtig schnell werden, vor allem bei Rückenwind. Dennoch, die Strecke ist lang und am Schluss wartet ein qualvoller Gegenanstieg nach Natz-Schabs. Die oberhalb von Brixen gelegene Südtiroler Hochfläche überziehen ausgedehnte Apfelplantagen, mehr als 900 000 Bäume stehen dort auf den Obstwiesen.",
-        "name": "3. Etappe: Ginzling - Brixen"
+        "title": "3. Etappe: Ginzling - Brixen"
       },
       "geometry": {
         "type": "Point",
@@ -59,16 +145,83 @@ var stops = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "bicycle",
+        "title": "Schlegeisspeicher",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.748929,47.060724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "Lavitzalm",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         11.66974,47.00339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "Pfitscher Joch",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.65781,46.99219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "Sterzing",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.44026,46.89572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "warehouse",
         "type": "waypoint",
-        "name": "4. Etappe: Brixen - Würzjoch in den Dolomiten",
+        "title": "4. Etappe: Brixen - Würzjoch in den Dolomiten",
         "description": "Ein Glanzlicht nach dem anderen bietet Tag vier, der uns über die Lüsner Alm im Eisacktal zum Würzjoch führt. Vor dem Genuss muss jedoch erst einmal ein Höhenverlust ausgeglichen werden. Etwa 300 Höhenmeter verlieren wir bei der Überquerung der Rienz, die sich hier tief eingeschnitten hat. Anschließend ist Ausdauer gefordert, es geht fast 1400 Höhenmeter stetig bergauf. Das kostet Kraft, auch weil wir ganz weit hinten im Tal bereits den Peitlerkofel sehen und damit ganz genau wissen, wie weit die heutige Strecke noch ist. Oder: Wir meinen es zu wissen. Zwar warten am Ende des langen Anstiegs mehrere Einkehrmöglichkeiten, doch das erhoffte genussreiche Radeln über die Hochfläche der Lüsner Alm entpuppt sich als überaus anstrengend. In einem ewigen Auf und Ab passieren wir malerische Almen, genießt fantastische Ausblicke - müssen aber immer wieder kurze Schiebepassagen bewältigen und werden ständig durch stachelige Weidezäune ausgebremst. Schließlich ist es fast geschafft. Nach der Querung des Maurerbergs führt ein schöner Trail mit Blick auf die Felsabbrüche des Peitlerkofels, der am nächsten Tag umrundet wird, zur Maurerberghütte. Bei dieser Kulisse ist es zu verschmerzen, dass vor dem Tagesziel Würzjochhaus wieder einmal ein Gegenanstieg wartet."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.813881,
-          46.67534
+          11.666325,46.770777
         ]
       }
     },
@@ -77,16 +230,66 @@ var stops = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "bicycle",
+        "title": "Lüsner Alm",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.77483,46.77141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "Maurerberghütte",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.81337,46.76730
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "Maurerberghütte",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.826407,46.692499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "warehouse",
         "type": "waypoint",
-        "name": "5. Etappe: Würzjoch - Villanders im Eisacktal",
+        "title": "5. Etappe: Würzjoch - Villanders im Eisacktal",
         "description": "Mit dem Mountainbike um den Peitlerkofel ist die vielleicht schönste Etappe dieser Strecke, zumindest bei Traumwetter. Dank des hochgelegenen Startpunktes genießen wir die Dolomitenkulisse und einen Fernblick bis zu den Zillertaler Alpen, durch die wir erst vor zwei Tagen geradelt sind. Und die Wege sind perfekt. Eine kurze Schiebepassage bremst unter dem Gommajoch aus, doch dann geht es mit Blick auf Peitlerkofel und Geislergruppe gleich wieder weiter auf optimalen Trails. Nächstes Zwischenziel ist das Kreuzkofeljoch (2340 m), hinter dem die Schlüterhütte steht. Die Umrundung des Peitlerkofels ist eine Fleißaufgabe und bei der langen Abfahrt ins Villnösstal und dem mühsamen Gegenanstieg zur Brogleshütte stellt sich schon die Frage, was man sich hier gerade antut. Aber nur kurz. Spätestens bei der malerischen Alm vor der Kulisse der Geislergruppe weiß jeder, warum er die Strapazen auf sich genommen hat. Als Belohnung schließt ein kilometerlanger Panoramaweg über den grünen Rücken von Raschötz an. Immer oben entlang mit grandiosen Ausblicken und einer schier endlosen Abfahrt hinunter ins Eisacktal, unterbrochen nur durch eine Schiebepassage gleich nach dem Tschankirchl unter dem Raschötzer Kreuz. Dort ist der mit unangenehm runden Steinen gepflasterte Weg so steil, dass wir freiwillig absteigen, zumindest kurz. Die Abfahrt endet erst 1500 Höhenmeter weiter unten in Klausen. Dies wäre eigentlich der ideale Ausklang eines Traumtages - doch damit die letzte Etappe nicht zu anstrengend wird, ist es besser, noch den Gegenanstieg nach Villanders in Kauf zu nehmen. Die 350 Höhenmeter führt eine befahrene Straße hinauf, doch nach diesem Tag hat keiner mehr die Kraft, sich abseits davon irgendwelche Feldwege zu suchen. Hier geht es nur noch darum, möglichst schnell ans Ziel zu kommen und die Beine auszustrecken."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.539987,
-          46.631415
+          11.813667,46.675458
         ]
       }
     },
@@ -95,15 +298,66 @@ var stops = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
-        "type": "destination",
-        "description": "Sechster Tag und damit das Finale unserer Transalp: Ein letzter langer Anstieg führt hinauf zur Villanderer Alm. Nicht steil, aber es zieht sich: Die Beine sind an Tag sechs einfach müde. Doch sobald man den Waldgürtel unter sich gelassen hat und über Almwiesen radelt, stellt sich wieder der gewohnte Elan ein. Der Ausblick motiviert. Beim letzten steilen Anstieg auf das Rittner Horn (2260 m) kommt der Ehrgeiz durch: Abgestiegen wird hier nicht mehr, da kann die Straße noch so steil sein. Ab dem Rittner Horn geht es nur noch bergab, zumindest weitgehend. Die kurzen, harmlosen Zwischenanstiege in Oberbozen bremsen den Abfahrtsrausch kaum. Die rekordverdächtige 2000-Höhenmeter-Abfahrt führt von den freien Wiesen am Rittner Horn hinunter nach Bozen. Möglichkeiten gibt es viele, doch wer direkt durch die Weinberge düst, sollte seine Bremsen beherrschen: Hier wird es noch einmal richtig steil. Unten in Bozen, auf dem Weg zu einem verdienten Cappuccino am Waltherplatz im Zentrum der Altstadt, ist man zwar stolz, die Transalp geschafft zu haben. Aber auch etwas wehmütig. Trotz aller Anstrengungen der vergangenen sechs Tage merkt man schon jetzt, dass das Abenteuer Transalp süchtig macht. Schließlich gibt es noch viele andere Möglichkeiten, mit dem Bike über die Alpen zu fahren. Das nächste Mal vielleicht sogar bis zum Gardasee.",
-        "name": "6. Etappe: Villanders - Bozen"
+        "marker-symbol": "bicycle",
+        "title": "Schlüterhütte",
+        "type": "viapoint",
+        "description": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.354671,46.49824
+          11.804564,46.635272
+        ]
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "title": "Brogleshütte",
+        "type": "viapoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.72730,46.61039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "warehouse",
+        "type": "waypoint",
+        "description": "Sechster Tag und damit das Finale unserer Transalp: Ein letzter langer Anstieg führt hinauf zur Villanderer Alm. Nicht steil, aber es zieht sich: Die Beine sind an Tag sechs einfach müde. Doch sobald man den Waldgürtel unter sich gelassen hat und über Almwiesen radelt, stellt sich wieder der gewohnte Elan ein. Der Ausblick motiviert. Beim letzten steilen Anstieg auf das Rittner Horn (2260 m) kommt der Ehrgeiz durch: Abgestiegen wird hier nicht mehr, da kann die Straße noch so steil sein. Ab dem Rittner Horn geht es nur noch bergab, zumindest weitgehend. Die kurzen, harmlosen Zwischenanstiege in Oberbozen bremsen den Abfahrtsrausch kaum. Die rekordverdächtige 2000-Höhenmeter-Abfahrt führt von den freien Wiesen am Rittner Horn hinunter nach Bozen. Möglichkeiten gibt es viele, doch wer direkt durch die Weinberge düst, sollte seine Bremsen beherrschen: Hier wird es noch einmal richtig steil. Unten in Bozen, auf dem Weg zu einem verdienten Cappuccino am Waltherplatz im Zentrum der Altstadt, ist man zwar stolz, die Transalp geschafft zu haben. Aber auch etwas wehmütig. Trotz aller Anstrengungen der vergangenen sechs Tage merkt man schon jetzt, dass das Abenteuer Transalp süchtig macht. Schließlich gibt es noch viele andere Möglichkeiten, mit dem Bike über die Alpen zu fahren. Das nächste Mal vielleicht sogar bis zum Gardasee.",
+        "title": "6. Etappe: Villanders - Bozen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.540051,46.631474 
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "warehouse",
+        "type": "destination",
+        "description": "",
+        "title": "Ziel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           11.357499,46.497883
         ]
       }
     }

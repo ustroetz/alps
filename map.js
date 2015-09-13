@@ -1,12 +1,11 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWxscnlkZXIiLCJhIjoidWs5cUFfRSJ9.t8kxvO3nIhCaAl07-4lkNw';
 var map = L.mapbox.map('map').setView([40, -74.50], 9);
-var stopsLayer = L.geoJson(stops, {
+
+
+var stopsLayer = L.mapbox.featureLayer(stops, {
     style: function(feature) {
+    	console.log(feature.properties);
         return feature.properties;
-    },
-    onEachFeature: function(feature, layer) {
-        popupContent = "<b>" + feature.properties.name + "</b><br>" + feature.properties.description
-        layer.bindPopup(popupContent);
     }
 })
 
@@ -24,7 +23,7 @@ stopsLayer.eachLayer(function(layer) {
         directions.setOrigin(coords);
     } else if (type == 'destination') {
         directions.setDestination(coords)
-    } else if (type == 'waypoint') {
+    } else if (type == 'waypoint' || type == 'viapoint') {
         directions.setWaypoint(index, coords)
     };
     index += 1;
@@ -33,6 +32,8 @@ stopsLayer.eachLayer(function(layer) {
 if (directions.queryable()) {
     directions.query();
 }
+
+console.log(directionsLayer);
 
 stopsLayer.addTo(map);
 map.fitBounds(stopsLayer.getBounds());
