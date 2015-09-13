@@ -53,3 +53,5 @@ L.control.layers({
     'Streets': L.mapbox.tileLayer('mapbox.streets'),
     'Satellite': L.mapbox.tileLayer('allryder.nebb4k35')
 }).addTo(map);
+
+L.control.locate().addTo(map);
