@@ -40,5 +40,6 @@ map.fitBounds(stopsLayer.getBounds());
 
 L.control.layers({
     'Outdoords': L.mapbox.tileLayer('allryder.neba5b9p').addTo(map),
+    'Streets': L.mapbox.tileLayer('mapbox.streets'),
     'Satellite': L.mapbox.tileLayer('allryder.nebb4k35')
 }).addTo(map);
