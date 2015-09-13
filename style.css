@@ -11,6 +11,6 @@ body {
 }
 
 .leaflet-popup-content {
-    height: 200px;
+    height: 20  0px;
     overflow: auto;
 }
