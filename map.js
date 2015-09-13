@@ -15,11 +15,11 @@ var stopsLayer = L.geoJson(stops, {
 
 var directions = L.mapbox.directions();
 
-var directionsLayer = L.mapbox.directions.layer(directions)
-    .addTo(map);
+// var directionsLayer = L.mapbox.directions.layer(directions)
+//     .addTo(map);
 
 
-map.fitBounds(stopsLayer.getBounds());
 
 stopsLayer.addTo(map);
+map.fitBounds(stopsLayer.getBounds());
 

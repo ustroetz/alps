@@ -9,3 +9,8 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+.leaflet-popup-content {
+    height: 200px;
+    overflow: auto;
+}
